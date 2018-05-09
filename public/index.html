@@ -4,10 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/css/index.css">
-  <title>An SCSS Project Template</title>
+  <link rel="stylesheet" href="css/index.css">
+  <title>Simple Calulator</title>
 </head>
 <body>
-  
+  <div class="container">
+    <input class="internal" type="number" id="numInput" />
+    <div class="buttons">
+      <div class="row">
+          <div class="smallBtns">
+              <div class="internal smallBtn btn" id="clearBtn">C</div>
+              <div class="internal operator smallBtn btn" id="divides" data-oper="/">/</div>
+              <div class="internal operator smallBtn btn" id="times" data-oper="*">x</div>
+              <div class="numBtn internal smallBtn btn">7</div>
+              <div class="numBtn internal smallBtn btn">8</div>
+              <div class="numBtn internal smallBtn btn">9</div>
+          </div>
+          <div class="internal operator tallBtn btn" id="minus" data-oper="-">-</div>
+          
+        </div>
+        <div class="row">
+            <div class="smallBtns">
+                <div class="numBtn internal smallBtn btn">4</div>
+                <div class="numBtn internal smallBtn btn">5</div>
+                <div class="numBtn internal smallBtn btn">6</div>
+                <div class="numBtn internal smallBtn btn">1</div>
+                <div class="numBtn internal smallBtn btn">2</div>
+                <div class="numBtn internal smallBtn btn">3</div>
+            </div>
+            <div class="internal operator tallBtn btn" id="plus" data-oper="+">+</div>
+          </div>
+      
+      
+      <div class="row">
+        <div class="numBtn internal wideBtn btn">0</div>
+        <div class="internal operator smallBtn btn" id="equals" data-oper="=">=</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
 </body>
 </html>
